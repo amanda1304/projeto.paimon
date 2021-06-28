@@ -1,0 +1,21 @@
+#body{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #25294a;
+    min-height: 100vh;
+}
+:root{
+    --rarity-4: #87679d;
+    --rarity-5: #9e7848;
+    --pyro: url('/images/element/pyro.png');
+    --hydro: url('/images/element/hydro.png');
+    --anemo: url('/images/element/anemo.png');
+    --electro: url('/images/element/electro.png');
+    --geo: url('/images/element/geo.png');
+    --cryo: url('/images/element/cryo.png');
+   
+    /* background-color: var(--rarity-5);
+    color: var(--rarity-5);
+    border: 1px solid var(--rarity-5); */
+}

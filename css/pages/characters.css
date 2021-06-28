@@ -1,0 +1,86 @@
+#page > h1{
+    font-size: 42px;
+    font-weight: 900;
+    font-family: 'Catamaran', sans-serif;
+}
+#page > ul#filter{
+    padding: 20px 0;
+}
+#page > ul#filter li{
+    display: inline-block;
+    padding: 5;
+    padding: 8px;
+    border-radius: 12px;
+}
+#page > ul#filter li:hover{
+    background-color:rgba(0, 0, 0, 0.25);
+}
+#page > ul#filter li img{
+    width: 30px;
+}
+#page > ul#characters{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    
+}
+#page > ul#characters li a{
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+   margin: 0 15px 15px 0;
+}
+#page > ul#characters li a img{
+    width: 96px;
+    height: 96px;
+}
+#page > ul#characters li a h2{
+    font-size: 13px;
+    text-align: center;
+    background-color: #323967;
+    padding: 10px 0;
+}
+/* Elemento*/
+[data-element]{
+
+    position: relative;
+}
+[data-element]::after{
+    content:'';
+    position: absolute;
+    top: -10px;
+    right: 3px;
+    background-color: #090a13e0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center ;
+}
+[data-element="pyro"]::after{
+    background-image: var(--pyro) ;
+}
+[data-element="hydro"]::after{
+    background-image: var(--hydro) ;
+}
+[data-element="anemo"]::after{
+    background-image: var(--anemo) ;
+}
+[data-element="electro"]::after{
+    background-image: var(--electro) ;
+}
+[data-element="geo"]::after{
+    background-image: var(--geo) ;
+}
+[data-element="cryo"]::after{
+    background-image: var(--cryo) ;
+}
+/*Raridade*/
+[data-rarity="4"] a {
+    background-color: var(--rarity-4);
+}
+[data-rarity="5"] a {
+    background-color: var(--rarity-5);
+}
